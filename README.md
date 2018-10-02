@@ -55,6 +55,8 @@ Geometric distribution arises from simple Bernoulli trials. You would consider t
 
 So if the binomial distribution answers “ How many successes?”, the geometric distribution is “How many failures until I succeed?” OR "How many visitors visist our website before a product is sold"?. "How many emails we send out before we get a customer response" etc. 
 
+![](dists3.jpg)
+
 ### Continuous Distributions
 
 A continuous distribution describes the probabilities of the possible values of a **continuous** random variable.  Probabilities of continuous random variables are defined as the area under the curve of its PDF. Thus, only ranges of values can have a nonzero probability. The probability that a continuous random variable equals some value is always zero. 
