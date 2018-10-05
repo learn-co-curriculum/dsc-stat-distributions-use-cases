@@ -3,59 +3,68 @@
 
 
 
-Data scientists have to choose probability distributions routinely and decide which one us for an analytics experiment. Probability distributions are like building blocks for statistical analysis, just like data structures are to computer programming. There are literally thousands of distributions to study, most of them may not be very common though. In the upcoming series of lessons, we shall look at some key distributions that you might come across with.
+Data scientists have to choose probability distributions routinely and decide which one model the given data on for an analytics experiment. Distributions are to statistical analysis what data structures are to computer programming. There are literally thousands of distributions to study, most of them may not be very common though. In the upcoming series of lessons, we shall look ways to analyze such distributions that you might come across with.
 
-![](dists1.jpg)
 ## Objectives:
 
 * Understand the concept of statistical distributions
 * Differentiate between discrete and continuous distributions
 * Understand commonly used distributions and their use cases
 
-
-
-
 ### So What is a "Statistical Distribution" ?
 
 The statistical distribution of a given set of data set is a listing or **function** showing all the possible values of the data and how often they occur. 
 
-For example, when a categorical distribution of data is organized, we can get , say the number or percentage of individuals in each group. When a distribution of numerical data is organized, we can show it as graphs and charts to examine the shape, center, and amount of spread in the data as we saw in measures in center and spread lessons. Based on the variation of their attributes, data distributions can take many shapes and forms. Below, we shall look into some popular distributions and learn how to distinguish between them visually. 
+For example, when a categorical (**discrete**) distribution of data is organized, we can get something like the number or percentage of entities in each category (think histogram which is a frequency distribution of data in bins). On the other hand, when a distribution of numerical (**continuous**) data is organized, we can show it as graphs to examine the shape, center, and amount of spread in the data. For numerical data composed of real numbers, we tend to use probabilities functions instead of frequencies due to reasons which we'll cover in this siection. 
 
-As an example, recall the Bernoulli distribution that we saw in previous section. Flipping a fair coin has two outcomes, heads or tails. Before the flip, we believe there is a 1 in 2 chance, or 0.5 probability, of heads and tails. That’s a probability distribution over the two outcomes of the flip. If you can follow this notion, you already know the Bernoulli distribution.  
+![](condis.png)
+
+Based on the variation of their attributes, data distributions can take many shapes and forms. The key parameters to describe random variables as distrubtions are statistical mean and variance of random data variable. Statistical variance gives a measure of how the data distributes itself about the Statistical Mean (or the **Expected Value** of data). Unlike range that only looks at boundaries of data distribution, the variance looks at all the data points and then determines their distribution. Here is a quick reference on how to calculate these parameters for discrete and continuous data.  
+
+<img src="exp-var.png" width = 500>
+
+As an example, recall the Bernoulli distribution that we saw in previous section. Flipping a fair coin has two outcomes, heads or tails. Before the flip, we believe there is a 1 in 2 chance, or 0.5 probability, of heads and tails. That’s a probability distribution over the two outcomes of the flip. And if you can follow this notion, you already know the Bernoulli distribution.  
 
 ### Common Distributions
 
-Bernoulli is the most basic distribution and a number of other, slightly more complex distributions evolve from Bernoulli as shown in the diagram below:
+Bernoulli distribution that we saw earlier is the most basic distribution and a number of other, slightly more complex distributions evolve from Bernoulli as shown in the diagram below:
 
 ![](dists.png)
 
 These distributions are described using their Probability density function (PDF).The horizontal axis in each chart is set of possible numeric outcomes. The vertical axis describes the probability of outcomes. 
 
+Let's quickly talk about some common distributions and their use cases below:
 
 ### Discrete Distributions
 
 Some distributions are discrete i.e. their outcomes must be integers like 2 or 6 (think of age in terms of years). These distributions show outcomes as **sparse** lines  (space between them), and the line height is the probability of that outcome as shown in the chart above. 
 
-#### Binomial/Bernoulli
+#### Uniform Distribution
 
-Binomial/Bernoulli distributions are examples of discrete distributions. The uniform distribution shown above with a flat probability of outcomes (all options are equally poissble) is another another common discrete distribution. Imagine rolling a fair dice. The outcomes 1 to 6 are equally likely. Such a distribution can be defined for any number of outcomes and hence is a discrete distribution. 
-
-In conducting a political opinion poll, choosing a voter at random to ascertain whether that voter will vote "yes" in an upcoming referendum is also an example of Bernoulli distribution. 
+Binomial/Bernoulli distributions are examples of discrete distributions that we have seen before. The uniform distribution shown above with a flat probability of outcomes (all options are equally possible) is another another common discrete distribution. Imagine rolling a fair dice. The outcomes 1 to 6 are equally likely. Such a distribution can be defined for any number of outcomes and hence is a discrete distribution. 
 
 
-#### Poisson
-What about the count of visitors visiting a company website each minute? 
-
-You could think of this as a binomial distribution with each second as a Bernoulli trial in which a customer calls or doesnt (1 or 0). However, as the company company knows, when the site goes down, 10 or even a thousand people can call in at exactly the same second.  One way around this would be to reduce the trial size from one second to say, 100th of a second. O, if it still doesnt solve the problem, we would need even smaller time segments. We can take this approach to infinitely small time intervals in which the probability of a call is infinitesimal. The limiting result is the Poisson distribution.
-
-The Poisson distribution is what you must think of when trying to count events over a time given the continuous rate of events occurring. When things like visitors arriving on a website, or customers arrive at a store, or clients waiting to be served in some kind of queue, think **“Poisson”**.
+Let's say you are trying to pick numbers for a lottery and you have to select 8 digits in total. This would be an example of a uniform distribution as all digits are equally likely to occur at any position in a fair lottery. You can model such random events using uniform distribution
 
 #### Geometric
 Geometric distribution arises from simple Bernoulli trials. You would consider this when asking questions like "How many times does a flipped coin come up tails before it first comes up heads?". The count of tails follows a geometric distribution. Like the Bernoulli distribution, it’s parameterized by p only, because the number of failure trials is the n outcome itself.
 
 So if the binomial distribution answers “ How many successes?”, the geometric distribution is “How many failures until I succeed?” OR "How many visitors visist our website before a product is sold"?. "How many emails we send out before we get a customer response" etc. 
 
-![](dists3.jpg)
+#### Poisson
+
+The Poisson distribution is what you must think of when trying to count events over a time given the continuous rate of events occurring. When things like visitors arriving on a website, or customers arrive at a store, or clients waiting to be served in some kind of queue, think **“Poisson”**.
+
+Some other examples are
+
+* The number of emergency calls recorded at a hospital in a day.
+* The number of thefts reported in an area on a day.
+* The number of customers arriving at a salon in an hour.
+* The number of suicides reported in a particular city.
+* The number of printing errors at each page of the book.
+
+
+
 
 ### Continuous Distributions
 
