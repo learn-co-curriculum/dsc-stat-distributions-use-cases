@@ -1,21 +1,23 @@
 
-# Statistical Distributions and Use cases in Data Analysis
+# Statistical Distributions and Their Use Cases
 
-
+## Introduction
 
 Data scientists have to choose probability distributions routinely and decide which one model the given data on for an analytics experiment. Distributions are to statistical analysis what data structures are to computer programming. There are literally thousands of distributions to study, most of them may not be very common though. In the upcoming series of lessons, we shall look ways to analyze such distributions that you might come across with.
 
-## Objectives:
+## Objectives
+
+You will be able to:
 
 * Understand the concept of statistical distributions
 * Differentiate between discrete and continuous distributions
 * Understand commonly used distributions and their use cases
 
-### So What is a "Statistical Distribution" ?
+## So What is a "Statistical Distribution" ?
 
 The statistical distribution of a given set of data set is a listing or **function** showing all the possible values of the data and how often they occur. 
 
-For example, when a categorical (**discrete**) distribution of data is organized, we can get something like the number or percentage of entities in each category (think histogram which is a frequency distribution of data in bins). On the other hand, when a distribution of numerical (**continuous**) data is organized, we can show it as graphs to examine the shape, center, and amount of spread in the data. For numerical data composed of real numbers, we tend to use probabilities functions instead of frequencies due to reasons which we'll cover in this siection. 
+For example, when a categorical (**discrete**) distribution of data is organized, we can get something like the number or percentage of entities in each category (think histogram which is a frequency distribution of data in bins). On the other hand, when a distribution of numerical (**continuous**) data is organized, we can show it as graphs to examine the shape, center, and amount of spread in the data. For numerical data composed of real numbers, we tend to use probabilities functions instead of frequencies due to reasons which we'll cover in this section. 
 
 ![](condis.png)
 
@@ -25,7 +27,7 @@ Based on the variation of their attributes, data distributions can take many sha
 
 As an example, recall the Bernoulli distribution that we saw in previous section. Flipping a fair coin has two outcomes, heads or tails. Before the flip, we believe there is a 1 in 2 chance, or 0.5 probability, of heads and tails. That’s a probability distribution over the two outcomes of the flip. And if you can follow this notion, you already know the Bernoulli distribution.  
 
-### Common Distributions
+## Common Distributions
 
 Bernoulli distribution that we saw earlier is the most basic distribution and a number of other, slightly more complex distributions evolve from Bernoulli as shown in the diagram below:
 
@@ -80,7 +82,7 @@ Normal distributions are used to describe many real world datasets that follow "
 
 ---
 
-#### So is that all about distributions ??
+## So is that all about distributions?
 
 The phenomena of statistical distributions carries a lot more depth and detail. This lesson gives you an initial introduction to different distributions. The significance and applications of these distributions will come with time as we proceed with analytics activities. For now, we shall carry on looking at the normal distribution in more detail in the upcoming lessons. Other distributions will be covered in detail in the statistics section later in the course. To conclude, how about a paranormal distribution .
 
