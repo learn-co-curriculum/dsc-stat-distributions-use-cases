@@ -72,7 +72,7 @@ Some other examples are
 
 A continuous distribution describes the probabilities of the possible values of a **continuous** random variable.  Probabilities of continuous random variables are defined as the area under the curve of its PDF. Thus, only ranges of values can have a nonzero probability. The probability that a continuous random variable equals some value is always zero. 
 
-#### The Normal or Gaussian distribution, 
+#### The Normal or Gaussian distribution
 
 A normal distribution is the single most important distribution for data analysis. Its bell shape is instantly recognizable as seen in the diagram above. A normal distribution turns up very often while dealing with real world data. 
 
@@ -80,7 +80,6 @@ If we take values and sum them, the distribution of their sum follows the normal
 
 Normal distributions are used to describe many real world datasets that follow "normality" including heights, weights of different people, errors in some measurement, marks in a test etc. 
 
----
 
 ## So is that all about distributions?
 
