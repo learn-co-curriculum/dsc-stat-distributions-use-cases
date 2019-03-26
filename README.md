@@ -3,7 +3,9 @@
 
 ## Introduction
 
-Data scientists have to choose probability distributions routinely. This includes selecting which distribution is most representative of the given data, in order to conduct an analytics experiment such as A/B testing. Distributions are to statistical analysis what data structures are to computer programming. There are literally thousands of distributions to study, although most of them are not very common. In the upcoming series of lessons, we will look at ways to analyze common distributions you are apt to encounter.
+As a data scientist, you'll often have to work with statistical distributions.  This includes selecting which distribution is most representative of a given set of data. A typical use case includes A/B testing, where understanding the process that generated the data is important. You can think of distributions in relation to statistical analysis as to data structures to computer programming.
+
+There are an enormous amount of distributions out there, but you'll see about a handful of distributions that can represent the vast majority of situations you'll come across. In the upcoming series of lessons, you'll look at ways to analyze common distributions you will encounter most frequently.
 
 ## Objectives
 
@@ -13,58 +15,77 @@ You will be able to:
 * Differentiate between discrete and continuous distributions
 * Understand commonly used distributions and their use cases
 
-## What is a "Statistical Distribution" ?
+## What is a Statistical Distribution?
 
-The statistical distributions show all the possible values of the data and how often they occur. For example, we can view the raw frequency of events or the percentage of time each event occurs.
+A statistical distribution is a representation of the frequencies of potential events or the percentage of time each event occurs.
 
-When talking about distributions, we also make the distinction between **discrete** and **continuous** variables. Discrete data can only take on set values, while continuous data can take on any possible value within a range. The outcomes from rolling a dice or tossing a coin are discrete; in the first case possible values are 1-6 while in the second options are Heads or Tails (often such binary variables are coded as 0/1). In contrast, a quantity such as temperature can take on any value within a certain range. The temperature could not only be 20 degrees, 21 degrees or 22 degrees, but it could also be 20.5, 20.05, 20.005, etc. leading to infinite possibilities. 
+This may feel pretty vague which is why we'll use two examples to clarify this concept.
 
-When dealing with **discrete** data we use a **probability mass function (PMF)**. When dealing with **continuous** data, we use a **probability density function (PDF)**.
+### Rolling a Dice Distribution
+Let's think back about our example rolling a dice. You know that when rolling dice once, you will obtain a number between 1 and 6, with each outcome to be as likely, as denoted in this table:
 
-<img src="pmf_pdf.png">
-Based on the variation of their attributes, data distributions can take many shapes and forms. The key parameters to describe random variables as distrubtions are statistical mean and variance of random data variable. Statistical variance gives a measure of how the data distributes itself about the Statistical Mean (or the **Expected Value** of data). Specifically, the variance measures the average distance of how far data points are from the mean of the data.
+| outcome     | 1   | 2   | 3   | 4   | 5   | 6   |
+|-------------|-----|-----|-----|-----|-----|-----|
+| probability | 1/6 | 1/6 | 1/6 | 1/6 | 1/6 | 1/6 |
 
-<img src="exp-var.png" width = 500>
+
+You can also represent this graphically as follows:
+
+<img src="images/dice_roll_pmf.png" width="400">
+
+Note how, with a fair coin, the chance of throwing each number is _exactly_ 1/6 (or 0.1666). The number of outcomes is finite and the outcome is a set of values. In this case, you are dealing with a **discrete distribution**.
+
+
+### Weather Distribution
+
+Let's look at another situation. Imagine we want to think of the distribution of the temperature in New York on June 1st. Thinking about this, you could say that the temperature would generally range between 65 and 95 Degrees (more extreme values would be exceptional), with the average around 80 Degrees Fahrenheit.
+
+A potential distribution looks like this:
+
+
+<img src="images/weather_pdf.png" width="400">
+
+Note that instead of bars, which we had for the dice example, we have _continuous_ lines here. Our distribution is a **continuous distribution**, because temperature is a continuous value (we can have a temperature of 80 degrees, of 80.5 degrees, of 80.0034 degrees, etc.).
+
+
+### Discrete vs Continuous Distributions
+
+When dealing with **discrete** data you use a **Probability Mass Function (PMF)** (as in our dice example). When dealing with **continuous** data, you use a **Probability Density Function (PDF)** (see our weather example).
+
+<img src="images/pmf_pdf.png">
+
+Based on the variation of their attributes, data distributions can take many shapes and forms. In the next few lessons, you'll learn how to describe data distributions. Very often, distributions are described using their statistical mean (or **expected value**) and variance of the data, but this is not always the case. You'll see more on this in the next few lessons.
 
 ## Common Distributions
 
-![](dists.png)
+In this image, you can see the general shapes of some common distributions. The horizontal axis in each chart represents the set of possible numeric outcomes. The vertical axis describes the probability of the respective outcomes.
 
-Here you can see the general shapes of some common distributions. The horizontal axis in each chart is set of possible numeric outcomes. The vertical axis describes the probability of outcomes. 
+![](images/dists.png)
 
+You'll get a more in-depth overview of some important distributions in the next few lessons, but to give you an initial idea of some applications, we give you a quick overview below.
 Let's quickly talk about some common distributions and their use cases below:
 
-## Discrete Distributions
+## Examples of Discrete Distributions
 
 ### The Bernoulli Distribution 
 
-(The Bernoulli distribution is also called the binomial distribution.)
-
-The bernoulli distribution represents the probability of $x$ successes in $n$ trials for a binomial variable (only 2 cases). Lots of textbooks use coin flipping examples, but the two outcomes can also have different probabilities such as the chance of success being 20%.
-
-### Geometric
-The geometric distribution also deals with repeated trials from a binomial variable. Rather then investigate the probability of $x$ successes in $n$ trials, the geometric distribution examines the probability that the first success will occur on trial n. 
+The Bernoulli distribution represents the probability of success for a certain experiment (the outcome being "success or not", so there are two possible outcomes). A coin toss is a classic example of a Bernoulli experiment with a probability of success 0.5 or 50%, but a Bernoulli experiment can have any probability of success between 0 and 1.
 
 ### Poisson
 
-The Poisson distribution represents the probability of n events in a given time period when the overall rate of occurence is constant. The classic example is pieces of mail. If your overall mail received is constant, the number of items received on a single day (or month) is apt to follow a poisson distribution. Other examples might include visitors arriving on a website, or customers arrive at a store, or clients waiting to be served in some kind of queue.
+The Poisson distribution represents the probability of $n$ events in a given time period when the overall rate of occurrence is constant. A typical example is pieces of mail. If your overall mail received is constant, the number of items received on a single day (or month) follows a Poisson distribution. Other examples might include visitors arriving on a website, or customers arrive at a store, or clients waiting to be served in a queue.
 
 ### Uniform Distribution
 
-The uniform distribution occurs when all possible outcomes are equally likely. An example might include the probability of a train arriving at any given time, or the probabilities for rolling a 1-6 on a single die. The uniform distribution is both a continuous and discrete distribution, occuring in both contexts. 
+The uniform distribution occurs when all possible outcomes are equally likely. The dice example shown before follows a uniform distribution with equal probabilities for throwing values from 1 to 6. The dice example follows a discrete uniform distribution, but continuous uniform distributions exist as well.
 
-### Continuous Distributions
+## Examples of Continuous Distributions
 
-#### The Normal or Gaussian distribution
+### The Normal or Gaussian distribution
 
-A normal distribution is the single most important distribution for data analysis. Its bell shape is instantly recognizable as seen in the diagram above. A normal distribution turns up very often when dealing with real world data including heights, weights of different people, errors in some measurement or marks on a test.
-
-
-## So is that all about distributions?
-
-The phenomena of statistical distributions carries a lot more depth and detail. This lesson gives you an initial introduction to different distributions. The significance and applications of these distributions will come with time as we proceed with analytics activities. For now, we shall carry on looking at the normal distribution in more detail in the upcoming lessons.
+A normal distribution is the single most important distribution, you'll basically come across it very often. The normal distribution follows a bell shape and is a foundational distribution for many models and theories in statistics and data science. A normal distribution turns up very often when dealing with real world data including heights, weights of different people, errors in some measurement or marks on a test. Our temperature example above follows a normal distribution as well!
 
 
 ## Summary
 
-In this lesson, we discussed the concept of statistical distribution as well as some common ones which we will examine in further detail.
+In this lesson, you learned about the concept of (discrete and continuous) statistical distributions, as well as some common ones. You'll learn more about distributions and their properties in the next few lessons! 
