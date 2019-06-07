@@ -33,7 +33,7 @@ You can also represent this graphically as follows:
 
 <img src="images/dice_roll_pmf.png" width="350">
 
-Note how, with a fair coin, the chance of throwing each number is _exactly_ 1/6 (or 0.1666). The number of outcomes is finite and the outcome is a set of values. In this case, you are dealing with a **discrete distribution**.
+Note how, with a fair die, the chance of throwing each number is _exactly_ 1/6 (or 0.1666). The number of outcomes is finite and the outcome is a set of values. In this case, you are dealing with a **discrete distribution**.
 
 
 ### Weather Distribution
