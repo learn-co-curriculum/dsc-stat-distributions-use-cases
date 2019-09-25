@@ -45,7 +45,7 @@ A potential distribution looks like this:
 
 <img src="images/weather_pdf.png" width="400">
 
-Note that instead of bars, which we had for the dice example, we have _continuous_ lines here. Our distribution is a **continuous distribution**, because temperature is a continuous value (we can have a temperature of 80 degrees, of 80.5 degrees, of 80.0034 degrees, etc.).
+Note that instead of bars, which we had for the dice example, we have _continuous_ lines here. Our distribution is a **continuous distribution** because temperature is a continuous value (we can have a temperature of 80 degrees, of 80.5 degrees, of 80.0034 degrees, etc.).
 
 
 ### Discrete vs Continuous Distributions
@@ -60,8 +60,8 @@ In this image, you can see the general shapes of some common distributions. The 
 
 ![](images/dists.png)
 
-You'll get a more in-depth overview of some important distributions in the next few lessons, but to give you an initial idea of some applications, we give you a quick overview below.
-Let's quickly talk about some common distributions and their use cases below:
+You'll get a more in-depth overview of some important distributions in the next few lessons, but to give you an initial idea of some applications, we'll give you a quick overview below.
+Let's quickly talk about some common distributions and their use cases below.
 
 ## Examples of Discrete Distributions
 
@@ -71,7 +71,7 @@ The Bernoulli distribution represents the probability of success for a certain e
 
 ### The Poisson Distribution
 
-The Poisson distribution represents the probability of $n$ events in a given time period when the overall rate of occurrence is constant. A typical example is pieces of mail. If your overall mail received is constant, the number of items received on a single day (or month) follows a Poisson distribution. Other examples might include visitors arriving on a website, or customers arrive at a store, or clients waiting to be served in a queue.
+The Poisson distribution represents the probability of $n$ events in a given time period when the overall rate of occurrence is constant. A typical example is pieces of mail. If your overall mail received is constant, the number of items received on a single day (or month) follows a Poisson distribution. Other examples might include visitors to a website, or customers arriving at a store, or clients waiting to be served in a queue.
 
 ### The Uniform Distribution
 
@@ -81,7 +81,7 @@ The uniform distribution occurs when all possible outcomes are equally likely. T
 
 ### The Normal or Gaussian distribution
 
-A normal distribution is the single most important distribution, you'll basically come across it very often. The normal distribution follows a bell shape and is a foundational distribution for many models and theories in statistics and data science. A normal distribution turns up very often when dealing with real world data including heights, weights of different people, errors in some measurement or marks on a test. Our temperature example above follows a normal distribution as well!
+A normal distribution is the single most important distribution, you'll basically come across it very often. The normal distribution follows a bell shape and is a foundational distribution for many models and theories in statistics and data science. A normal distribution turns up very often when dealing with real-world data including heights, weights of different people, errors in some measurement or grades on a test. Our temperature example above follows a normal distribution as well!
 
 
 ## Summary
