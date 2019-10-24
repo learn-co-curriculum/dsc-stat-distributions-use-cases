@@ -11,9 +11,9 @@ There are an enormous amount of distributions out there, but you'll see about a 
 
 You will be able to:
 
-* Understand the concept of statistical distributions
+* Define statistical distributions
 * Differentiate between discrete and continuous distributions
-* Understand commonly used distributions and their use cases
+* List the common distributions and their use cases
 
 ## What is a Statistical Distribution?
 
