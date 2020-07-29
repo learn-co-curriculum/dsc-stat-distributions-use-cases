@@ -71,7 +71,7 @@ The Bernoulli distribution represents the probability of success for a certain e
 
 ### The Poisson Distribution
 
-The Poisson distribution represents the probability of $n$ events in a given time period when the overall rate of occurrence is constant. A typical example is pieces of mail. If your overall mail received is constant, the number of items received on a single day (or month) follows a Poisson distribution. Other examples might include visitors to a website, or customers arriving at a store, or clients waiting to be served in a queue.
+The Poisson distribution represents the probability of <img src="https://render.githubusercontent.com/render/math?math=n">events in a given time period when the overall rate of occurrence is constant. A typical example is pieces of mail. If your overall mail received is constant, the number of items received on a single day (or month) follows a Poisson distribution. Other examples might include visitors to a website, or customers arriving at a store, or clients waiting to be served in a queue.
 
 ### The Uniform Distribution
 
