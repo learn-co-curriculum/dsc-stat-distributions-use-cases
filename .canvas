@@ -20,3 +20,7 @@
   :course_id: 343
   :canvas_url: https://learning.flatironschool.com/courses/343/assignments/13927
   :type: assignment
+- :id: 13999
+  :course_id: 343
+  :canvas_url: https://learning.flatironschool.com/courses/343/pages/statistical-distributions-and-their-use-cases-2
+  :type: page
