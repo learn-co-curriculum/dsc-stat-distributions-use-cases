@@ -56,7 +56,7 @@ Based on the variation of their attributes, data distributions can take many sha
 
 In this image, you can see the general shapes of some common distributions. The horizontal axis in each chart represents the set of possible numeric outcomes. The vertical axis describes the probability of the respective outcomes.
 
-<img src="images/dists.png" width="350">
+<img src="images/dists.png" width="600">
 
 You'll get a more in-depth overview of some important distributions in the next few lessons, but to give you an initial idea of some applications, we'll give you a quick overview below.
 Let's quickly talk about some common distributions and their use cases below.
