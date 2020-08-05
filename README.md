@@ -42,11 +42,9 @@ Let's look at another situation. Imagine we want to think of the distribution of
 
 A potential distribution looks like this:
 
-
 <img src="images/weather_pdf.png" width="400">
 
 Note that instead of bars, which we had for the dice example, we have _continuous_ lines here. Our distribution is a **continuous distribution** because temperature is a continuous value (we can have a temperature of 80 degrees, of 80.5 degrees, of 80.0034 degrees, etc.).
-
 
 ### Discrete vs Continuous Distributions
 
@@ -58,7 +56,7 @@ Based on the variation of their attributes, data distributions can take many sha
 
 In this image, you can see the general shapes of some common distributions. The horizontal axis in each chart represents the set of possible numeric outcomes. The vertical axis describes the probability of the respective outcomes.
 
-![](images/dists.png)
+<img src="images/dists.png" width="350">
 
 You'll get a more in-depth overview of some important distributions in the next few lessons, but to give you an initial idea of some applications, we'll give you a quick overview below.
 Let's quickly talk about some common distributions and their use cases below.
@@ -79,10 +77,9 @@ The uniform distribution occurs when all possible outcomes are equally likely. T
 
 ## Examples of Continuous Distributions
 
-### The Normal or Gaussian distribution
+### The Normal or Gaussian Distribution
 
 A normal distribution is the single most important distribution, you'll basically come across it very often. The normal distribution follows a bell shape and is a foundational distribution for many models and theories in statistics and data science. A normal distribution turns up very often when dealing with real-world data including heights, weights of different people, errors in some measurement or grades on a test. Our temperature example above follows a normal distribution as well!
-
 
 ## Summary
 
