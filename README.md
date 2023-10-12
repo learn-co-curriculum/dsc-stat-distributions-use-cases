@@ -51,7 +51,7 @@ Let's think back about our example of rolling dice. You know that when rolling a
 
 You can also represent this graphically as follows:
 
-<img src="images/dice_roll_pmf.png" width="350">
+<img src="https://curriculum-content.s3.amazonaws.com/data-science/images/dice_roll_pmf.png" width="350">
 
 Note how, with a fair die, the chance of throwing each number is _exactly_ 1/6 (or 0.1666). The number of outcomes is finite and the outcome is a set of values. In this case, you are dealing with a **discrete distribution**.
 
@@ -61,7 +61,7 @@ Let's look at another situation. Imagine we want to think of the distribution of
 
 A potential distribution looks like this:
 
-<img src="images/weather_pdf.png" width="400">
+<img src="https://curriculum-content.s3.amazonaws.com/data-science/images/weather_pdf.png" width="400">
 
 Note that instead of bars, which we had for the dice example, we have _continuous_ lines here. Our distribution is a **continuous distribution** because temperature is a continuous value (we can have a temperature of 80 degrees, of 80.5 degrees, of 80.0034 degrees, etc.).
 
@@ -69,7 +69,7 @@ Note that instead of bars, which we had for the dice example, we have _continuou
 
 In this image, you can see the general shapes of some common distributions. The horizontal axis in each chart represents the set of possible numeric outcomes. The vertical axis describes the probability of the respective outcomes.
 
-![](images/dists.png)
+![](https://curriculum-content.s3.amazonaws.com/data-science/images/dists.png)
 
 You'll get a more in-depth overview of some important distributions in the next few lessons, but to give you an initial idea of some applications, we'll give you a quick overview below.
 Let's quickly talk about some common distributions and their use cases below.
