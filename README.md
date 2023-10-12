@@ -18,20 +18,20 @@ You will be able to:
 
 A statistical distribution is a **representation of the frequencies of potential events** or the percentage of time each event occurs. Here we will focus on a particular kind of statistical distribution: a **probability distribution**.
 
-Returning to set theory, a probability distribution mathematically represents the probabilities of sets of variables  <img src="https://render.githubusercontent.com/render/math?math=X"> and sets of events  <img src="https://render.githubusercontent.com/render/math?math=E"> such that  <img src="https://render.githubusercontent.com/render/math?math=X \in E"> ( <img src="https://render.githubusercontent.com/render/math?math=X"> is a member of  <img src="https://render.githubusercontent.com/render/math?math=E"> ), fully written as  <img src="https://render.githubusercontent.com/render/math?math=P(X \in E)"> . So, for a given  <img src="https://render.githubusercontent.com/render/math?math=x"> value and a given event, a probability distribution gives you the probability that  <img src="https://render.githubusercontent.com/render/math?math=x"> belongs to that event.
+Returning to set theory, a probability distribution mathematically represents the probabilities of sets of variables $X$ and sets of events $E$ such that $X \in E$ ($X$ is a member of $E$), fully written as $P(X \in E)$. So, for a given $x$ value and a given event, a probability distribution gives you the probability that $x$ belongs to that event.
 
 Because they mathematically represent probabilities of events, rules applying to probabilities in general also apply to probability distributions:
 
-### 1.  <img src="https://render.githubusercontent.com/render/math?math=P(X \in E) \in \mathbb{R}, P(X \in E) \geq 0"> 
-- The probability that a certain  <img src="https://render.githubusercontent.com/render/math?math=X"> belongs to a certain  <img src="https://render.githubusercontent.com/render/math?math=E"> is a non-negative real number
+### 1. $P(X \in E) \in \mathbb{R}, P(X \in E) \geq 0$
+- The probability that a certain $X$ belongs to a certain $E$ is a non-negative real number
 - This corresponds to the **positivity** axiom from probability theory
 
-### 2.  <img src="https://render.githubusercontent.com/render/math?math=P(X \in E) \leq 1, P(\Omega) = 1"> 
-- The probability that a certain  <img src="https://render.githubusercontent.com/render/math?math=X"> belongs to a certain  <img src="https://render.githubusercontent.com/render/math?math=E"> is less than or equal to 1, and the probability of some event within the sample space occurring is 1
+### 2. $P(X \in E) \leq 1, P(\Omega) = 1$
+- The probability that a certain $X$ belongs to a certain $E$ is less than or equal to 1, and the probability of some event within the sample space occurring is 1
 - This corresponds to the **unitarity** axiom (probability of a certain event)
 
-### 3.  <img src="https://render.githubusercontent.com/render/math?math=P(X \in \underset{i}{\bigsqcup} E_i) = \underset{i}{\Sigma}P(X \in E_i)"> for any disjoint family of sets  <img src="https://render.githubusercontent.com/render/math?math=\{E_i\}"> 
-- The probability that a certain  <img src="https://render.githubusercontent.com/render/math?math=X"> belongs to the union of these disjoint (mutually exclusive) events is equal to the sum of the probability that  <img src="https://render.githubusercontent.com/render/math?math=X"> belongs to each event, added together
+### 3. $P(X \in \underset{i}{\bigsqcup} E_i) = \underset{i}{\Sigma}P(X \in E_i)$ for any disjoint family of sets $\{E_i\}$
+- The probability that a certain $X$ belongs to the union of these disjoint (mutually exclusive) events is equal to the sum of the probability that $X$ belongs to each event, added together
 - This corresponds to the **additivity** axiom (for mutually exclusive events). ***In a probability distribution, all events must be must be mutually exclusive.***
 
 This may feel pretty vague and theoretical, which is why we'll use two examples to clarify this concept.
@@ -51,7 +51,7 @@ Let's think back about our example of rolling dice. You know that when rolling a
 
 You can also represent this graphically as follows:
 
-<img src="images/dice_roll_pmf.png" width="350">
+<img src="https://curriculum-content.s3.amazonaws.com/data-science/images/dice_roll_pmf.png" width="350">
 
 Note how, with a fair die, the chance of throwing each number is _exactly_ 1/6 (or 0.1666). The number of outcomes is finite and the outcome is a set of values. In this case, you are dealing with a **discrete distribution**.
 
@@ -61,7 +61,7 @@ Let's look at another situation. Imagine we want to think of the distribution of
 
 A potential distribution looks like this:
 
-<img src="images/weather_pdf.png" width="400">
+<img src="https://curriculum-content.s3.amazonaws.com/data-science/images/weather_pdf.png" width="400">
 
 Note that instead of bars, which we had for the dice example, we have _continuous_ lines here. Our distribution is a **continuous distribution** because temperature is a continuous value (we can have a temperature of 80 degrees, of 80.5 degrees, of 80.0034 degrees, etc.).
 
@@ -69,7 +69,7 @@ Note that instead of bars, which we had for the dice example, we have _continuou
 
 In this image, you can see the general shapes of some common distributions. The horizontal axis in each chart represents the set of possible numeric outcomes. The vertical axis describes the probability of the respective outcomes.
 
-![](images/dists.png)
+![](https://curriculum-content.s3.amazonaws.com/data-science/images/dists.png)
 
 You'll get a more in-depth overview of some important distributions in the next few lessons, but to give you an initial idea of some applications, we'll give you a quick overview below.
 Let's quickly talk about some common distributions and their use cases below.
@@ -88,7 +88,7 @@ The Bernoulli distribution represents the probability of success for a certain e
 
 #### The Poisson Distribution
 
-The Poisson distribution represents the probability of  <img src="https://render.githubusercontent.com/render/math?math=n"> events in a given time period when the overall rate of occurrence is constant. A typical example is pieces of mail. If your overall mail received is constant, the number of items received on a single day (or month) follows a Poisson distribution. Other examples might include visitors to a website, or customers arriving at a store, or clients waiting to be served in a queue.
+The Poisson distribution represents the probability of $n$ events in a given time period when the overall rate of occurrence is constant. A typical example is pieces of mail. If your overall mail received is constant, the number of items received on a single day (or month) follows a Poisson distribution. Other examples might include visitors to a website, or customers arriving at a store, or clients waiting to be served in a queue.
 
 #### The Uniform Distribution
 
